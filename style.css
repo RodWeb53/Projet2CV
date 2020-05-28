@@ -1,0 +1,74 @@
+h1 
+{
+  text-transform: uppercase;
+}
+header
+{
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#photo
+{
+  width: 33%;
+  background-color: yellow;
+}
+#titre
+{
+  width: 67%;
+  text-align: center;
+  background-color: beige;
+}
+#corp
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#contenu_gauche
+{
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 33%;
+}
+#contenu_gauche h1
+{
+  text-align: center;
+}
+#contenu_droite
+{
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  width: 67%;
+}
+
+
+
+
+@media screen and (max-width: 768px)
+{
+  #corp
+  {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+  }
+  #contenu_gauche
+{
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: auto;
+}
+
+#contenu_droite
+{
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  width: auto;
+}
+}
