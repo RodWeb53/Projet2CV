@@ -1,25 +1,49 @@
+body
+{
+  font-family: verdana,arial,helvetica,sans-serif;
+}
 h1 
 {
   text-transform: uppercase;
 }
 header
 {
-  background-color: red;
   display: flex;
   justify-content: space-between;
   text-align: center;
+  font-size: 2em;
 }
 #photo
 {
   width: 33%;
-  background-color: yellow;
+  background-color: #ffd600;
+
+
+}
+#phototaille
+{
+  margin: auto;
+  width: 140px;
+  border-radius: 100%;
 }
 #titre
 {
   width: 67%;
-  text-align: center;
-  background-color: beige;
+  text-align: left;
+  padding-left: 50px;
 }
+#titre h1 span
+{
+  color: #ffd600;
+}
+#titre p span
+{
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-color: #ffd600;
+}
+
+
 #corp
 {
   display: flex;
@@ -30,19 +54,43 @@ header
 {
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background-color: #ffd600;
   width: 33%;
 }
+
 #contenu_gauche h1
 {
   text-align: center;
+  background-color: #212121;
+  color: #ffd600;
+  padding: 10px 0px 10px 0px;
 }
+#contenu_gauche p
+{
+  padding-left: 50px;
+}
+.decAdresse
+{
+  text-decoration: none;
+}
+
+#justif
+{
+  padding-right: 50px;
+  text-align: justify;
+}
+
+
+
+
+
 #contenu_droite
 {
   display: flex;
   flex-direction: column;
   background-color: green;
   width: 67%;
+  padding-left: 50px;
 }
 
 
