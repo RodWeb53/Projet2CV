@@ -1,11 +1,18 @@
 body
 {
   font-family: verdana,arial,helvetica,sans-serif;
+  width: 1654px;
+  height: 2339px;
+  margin: auto;
 }
-h1 
+/* Transformation des titres h1 et h2 en majuscule sur tout de document */
+h1, h2
 {
   text-transform: uppercase;
 }
+
+
+/* parametrage du header */
 header
 {
   display: flex;
@@ -13,67 +20,88 @@ header
   text-align: center;
   font-size: 2em;
 }
+/* centrage de la photo sur le header*/
+header aside
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+/* bloc photo gestion de la largeur du bloc et de la couleur de fond */
 #photo
 {
-  width: 33%;
-  background-color: #ffd600;
-
-
+  width: 30%;
+  background-color: #BCAAA4;
 }
+/* formatage de la photo */
 #phototaille
 {
-  margin: auto;
-  width: 140px;
+  width: 200px;
   border-radius: 100%;
+  display: inline-block;
+  margin: auto;
 }
+/* parametrage du titre du header */
 #titre
 {
-  width: 67%;
+  width: 70%;
   text-align: left;
-  padding-left: 50px;
+  padding: 50px 0px 50px 50px;
 }
+/* changement de la couleur d'une parti du titre via le span */
 #titre h1 span
 {
-  color: #ffd600;
+  color: #BCAAA4;
 }
+/*soulignement partiel du sous titre via le span */
 #titre p span
 {
-  text-decoration-style: solid;
-  text-decoration-line: underline;
-  text-decoration-color: #ffd600;
+  text-decoration: solid underline #BCAAA4;
 }
-
-
+/* gestion des blocs gauche et droit du corp de la page */
 #corp
 {
   display: flex;
   flex-direction: row;
 }
 
-#contenu_gauche
+
+
+/* Gestion de la partie gauche du site "Contact et A propos de moi" */
+/* Affectation d'une largeur à la partie gauche */
+section .contenu_gauche
 {
   display: flex;
   flex-direction: column;
-  background-color: #ffd600;
-  width: 33%;
+  background-color: #BCAAA4;
+  width: 30%;
 }
-
-#contenu_gauche h1
+/* Ajout d'une marge basse au contact */
+.contenu_gauche aside
+{
+  margin-bottom: 30px;
+}
+/* Mise en style des titres h1 du bandeau vertical gauche */
+.contenu_gauche h1
 {
   text-align: center;
-  background-color: #212121;
-  color: #ffd600;
+  background-color: #455A64;
+  color: #BCAAA4;
+  margin-top: 0px;
+  margin-bottom: 30px;
   padding: 10px 0px 10px 0px;
 }
-#contenu_gauche p
+/* Padding pour le décalage du texte des balises p */
+.contenu_gauche p
 {
   padding-left: 50px;
 }
+/* Enlever le soulignement des adresses mail et site web */
 .decAdresse
 {
   text-decoration: none;
 }
-
+/* Mise en page type justifié sur le paragraphe à propos de moi */
 #justif
 {
   padding-right: 50px;
@@ -83,40 +111,117 @@ header
 
 
 
-
-#contenu_droite
+/* Gestion de la partie droite du site "Formation et Expérience pro" */
+/* Mise en place de la largeur de la partie droite */
+section .contenu_droite
 {
   display: flex;
   flex-direction: column;
-  background-color: green;
-  width: 67%;
+  width: 70%;
   padding-left: 50px;
 }
+/* mise en forme des titres h1 du bandeau vertical droit*/
+.contenu_droite h1
+{
+  border-bottom-style: solid;
+  border-bottom-color: #BCAAA4;
+  width: 90%;
+}
+/* Mise en style des icones dans les balise i des titres h1 */
+.contenu_droite i
+{
+  color: #BCAAA4;
+  padding-right: 40px;
+}
+/* "orgadroite" est la mise en page et en style du contenu du bandeau droit*/
+.orgadroite
+{
+  display: flex;
+  flex-direction: row;
+}
+.orgadroite i
+{
+  padding-top: 20px;
+}
+.orgadroite aside
+{
+  display: flex;
+  flex-direction: row;
+  width: 30%
+}
+.orgadroite article
+{
+  width: 60%;
+  padding-bottom: 20px;
+}
+.orgadroite article p
+{
+  text-align: justify;
+}
+.decTexteBas
+{
+  padding-bottom: 50px;
+}
 
+
+/* gestion du footer */
+/* Mise en couleur du footer */
+footer
+{
+  display: flex;
+  flex-direction: row;
+  background-color: #BCAAA4;
+}
+/* Definition de la largeur gauche du footer */
+footer aside
+{
+  width: 30%;
+  margin-top: 50px;
+}
+/* Definition de la largeur droite du footer */
+footer article
+{
+  width: 70%;
+  padding-left: 50px;
+  background-color: white;
+}
+/* Mise en style et placement des icones*/
+footer aside ul
+{
+  font-size: 2em;
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-around;
+  list-style: none;
+}
+/* Ajout de l'arrondi autour des icones loisir*/
+#piedgauche li
+{
+  border: solid;
+  border-radius: 50%;
+}
+/* Placement des div en horizontal */
+footer article div
+{
+  width: 40%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* Suppression des listes à puces */
+footer article div ul
+{
+  list-style: none;
+}
+/* Suppression des soulignements sur les adresses mail*/
+footer article div ul li a
+{
+  text-decoration: none;
+}
 
 
 
 @media screen and (max-width: 768px)
 {
-  #corp
-  {
-    display: flex;
-    flex-direction: column;
-    background-color: aqua;
-  }
-  #contenu_gauche
-{
-  display: flex;
-  flex-direction: column;
-  background-color: blue;
-  width: auto;
-}
-
-#contenu_droite
-{
-  display: flex;
-  flex-direction: column;
-  background-color: green;
-  width: auto;
-}
+ 
 }

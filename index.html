@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/03826393cd.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>CV Rodolphe Clemenceau</title>
     </head>
@@ -15,64 +16,185 @@
             <p><img id="phototaille" src="image/photo.jpg" alt="Photo Rodolphe"></p>
           </aside>
           <section id="titre">
-            <h1><span>Rodolphe</span> Clemenceau</h1>
-            <p><span>Dével</span>oppeur Web en formation</p>
+            <h1><span>Rodolphe</span> Clemenceau</h1><!--ajout d'un span pour changer la couleur en css -->
+            <p><span>Dével</span>oppeur Web en formation</p><!--ajout d'un span pour ajouter un soulignement en css -->
           </section>
         </header>
 
 
-        <div id="corp">
-          <div id="contenu_gauche">
-            <aside>
+        <section id="corp">
+          <div class="contenu_gauche"> <!--bloc gauche "contact et à propos de moi"-->
+            <!--bloc gauche contact -->
+            <aside> 
               <h1>Contact</h1>
-            </aside>
+
               <p>
                 Adresse<br />
                 Ville Chien<br />
                 53200 Gennes sur Glaize<br/>
                 France<br />
               </p>
+              
               <p>
                 Téléphone<br />
-                06 30 124 175
+                <!--ajout d'une image de 1px vide pour enlever le soulignement sous Edge -->
+                06 30<img src="image/vide.png" alt="" width="1" height="1"/> 124 175
               </p>
+              
               <p>
                 Email<br />
                 <a class="decAdresse" href="mailto:vizoro@wanadoo.fr">vizoro@wanadoo.fr</a>
               </p>
+              
               <p>
                 Site web<br />
                 <a class="decAdresse" href="https://github.com/RodWeb53/Projet2CV.git">www.Projet2cv.git</a>
               </p>
+              
               <p>
                 Skype<br />
                 @r.clemenceau@slts-sa.com
               </p>
-            <aside>
+
+            </aside>
+            <!--bloc gauche à propos de moi -->
+            <aside> 
               <h1>à propos de moi</h1>
+              
               <p id="justif">
-                Après 31 ans dans le monde de l'industrie, je me suis lancé un challenge.<br />
-                Celui de devenir<em> Développeur Web </em>et mettre en avant ma créativité.
+                Après 31 ans dans le monde de l'industrie et être passé par plusieurs fonctions et secteurs comme :<br /><br />
+                Production : conduite de diverses machines ensuite management des équipes…<br /><br />
+                Administratif : responsable logistique puis informatique et enfin chef de projet ERP.<br /><br />
+                Après avoir gouté aux joies du développement dans mes dernières fonction je me suis lancé un nouveau challenge.
+                Celui de devenir<em> Développeur Web </em>et mettre ma créativité en avant.
               </p>
+
             </aside>
-            <aside>
-              <h1>Loisirs</h1>
-            </aside>
+
           </div>
 
-          <div id="contenu_droite">
-            <article>
-              <h1><span>icone </span>Formation</h1>
+          <div class="contenu_droite"><!--bloc droit "Formation et expériences pro"-->
 
-            </article>
-            <article>
-              <h1><span>icone </span>Expérience pofessionelle</h1>
-            </article>
-            <article>
-              <h1><span>icone </span>Recommandations</h1>
-            </article>
+            <div class="decTexteBas"><!--bloc droit "Formation"-->
+              <h1><i class="fas fa-graduation-cap"></i>Formation</h1><!-- dans les balise i insertion d'un icone fontawesome -->
+              <div class="orgadroite">
+                <aside><i class="far fa-dot-circle"></i>
+                  <p>2020<br />Internet</p>
+
+                </aside>
+                <article>
+                  <h2>Openclassrooms</h2>
+                  <p>Web développeur</p>
+                  <p>Formation de web développeur commencé en Mai 2020, sur une période de 6 mois.</p>
+                </article>
+              </div>
+              <div class="orgadroite">
+                <aside><i class="fas fa-circle"></i>
+                  <p>1986 - 1988<br />Angers</p>
+
+                </aside>
+                <article>
+                  <h2>La baronnerie</h2>
+                  <p>CAP mécanicien Ajusteur</p>
+                  <p>Diplome de mécanicien ajousteur sur une période de 3 années.</p>
+                </article>
+              </div>
+            </div>
+
+ 
+            <div class="decTexteBas"> <!--bloc droit "expériences pro"-->
+              <h1><i class="fas fa-briefcase"></i>Expérience professionelle</h1>
+              <div class="orgadroite">
+                <aside><i class="far fa-dot-circle"></i>
+                  <p>2019 - ce jour<br />St Lambert la potherie</p>
+
+                </aside>
+                <article>
+                  <h2>SLTS</h2>
+                  <p>Ordonnanceur</p>
+                  <p>Planification de l'intégralité de la production du site</p>
+                </article>
+              </div>
+
+              <div class="orgadroite">
+                <aside><i class="fas fa-circle"></i>
+                  <p>2014 - 2019<br />St Lambert la potherie</p>
+
+                </aside>
+                <article>
+                  <h2>SLTS</h2>
+                  <p>Chef de projet ERP</p>
+                  <p>Changement d'ERP. Les taches sur les 6 années à ce postes ont été:<br />
+                  Création du cahier des charges, prospection des offres du marché, choix du prestataire, paramétrage, mise en place, accompagnement et développement.</p>
+                </article>
+              </div>
+
+              <div class="orgadroite">
+                <aside><i class="fas fa-circle"></i>
+                  <p>2010 - 2014<br />St Lambert la potherie</p>
+
+                </aside>
+                <article>
+                  <h2>SLTS</h2>
+                  <p>Responsable logistique</p>
+                  <p>Gestion d'une équipe de 8 personnes, et d'une flotte de 3 camions.<br />
+                    Gestion des emballages, préparation des tournées .....
+                  </p>
+                </article>
+              </div>
+
+              <div class="orgadroite">
+                <aside><i class="fas fa-circle"></i>
+                  <p>1989 - 2010<br />St Lambert la potherie</p>
+
+                </aside>
+                <article>
+                  <h2>SLTS</h2>
+                  <p>Technicien de production</p>
+                  <p>Opérateur régleur sur machine à commande numérique<br />
+                    Programmation via la CAO et CFAO.
+                  </p>
+                </article>
+              </div>
+
+            </div>
+
+           
           </div>
-        </div>
+        </section>
+
+
+        <footer> <!--bloc footer gauche "Loisir" et droite "Recommandations"-->
+          <aside class="contenu_gauche"> <!--bloc gauche "Loisir" -->
+            <h1>Loisirs</h1>
+            <ul id="piedgauche">
+              <li><i class="fas fa-table-tennis"></i></li>
+              <li><i class="fas fa-biking"></i></li>
+              <li><i class="fas fa-swimmer"></i></li>
+            </ul>
+          </aside>
+          <article class="contenu_droite"> <!--bloc droit "Recommandations"-->
+            <h1><i class="fas fa-pencil-alt"></i>Recommandations</h1>
+            <div id="piedd1">
+              <ul>
+                <li>BRUNO VERGNE</li>
+                <li>Directeur, SLTS</li>
+                <!--ajout d'une image de 1px vide pour enlever le soulignement sous Edge -->
+                <li>Télephone : 06 73<img src="image/vide.png" alt="" width="1" height="1"/> 98 92 38</li>
+                <li>Email: <a href="b.vergne@slts-sa.com">b.vergne@slts-sa.com</a></li>
+              </ul>
+            </div>
+            <div id="pied2">
+              <ul>
+                <li>VALENTIN NIVAU</li>
+                <li>Directeur production, SLTS</li>
+                <!--ajout d'une image de 1px vide pour enlever le soulignement sous Edge -->
+                <li>Télephone : 06 40<img src="image/vide.png" alt="" width="1" height="1"/> 47 90 57</li>
+                <li>Email: <a href="v.nivau@slts-sa.com">v.nivau@slts-sa.com</a></li>
+              </ul>
+            </div>
+          </article>
+        </footer>
       </div>
     </body>
 </html>
