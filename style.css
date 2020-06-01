@@ -1,17 +1,15 @@
 body
 {
   font-family: verdana,arial,helvetica,sans-serif;
-  min-width: 769px;
   max-width: 1654px;
   margin: auto;
-  font-size: 1em;
+  font-size: 0.85em;
 }
 /* Transformation des titres h1 et h2 en majuscule sur tout de document */
 h1, h2
 {
   text-transform: uppercase;
 }
-
 
 /* parametrage du header */
 header
@@ -190,10 +188,12 @@ footer article
 footer aside ul
 {
   font-size: 2em;
-  width: 90%;
+  width: 100%;
+  padding: 0px;
   display: inline-flex;
   justify-content: space-around;
   list-style: none;
+  margin-top: 0px;
 }
 /* Ajout de l'arrondi autour des icones loisir*/
 #piedgauche li
@@ -220,14 +220,19 @@ footer article div ul li a
   text-decoration: none;
 }
 
-@media (min-width: 350px) and (max-width: 768px)
+
+
+
+
+/*----------Media Queries -----------------*/
+/* Gestion d'une version tablette portrait */
+
+@media screen and (max-width: 768px)
 {
   body
   {
     font-size: 1.7vw;
-    max-width: 768px;
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
   }
   /* Changement de la taille de photo */
   #phototaille
@@ -257,6 +262,14 @@ footer article div ul li a
   {
     width: 100%;
   }
+  section .contenu_droite
+  {
+    padding-left: 0px;
+  }
+  section .contenu_droite h1, section .contenu_droite aside
+  {
+    margin-left: 50px;
+  }
   /* Réduction des marges des titres contact, a propos et loisir */
   .contenu_gauche aside 
   {
@@ -278,6 +291,14 @@ footer article div ul li a
     flex-direction: column;
   }
   /* bandeau recommandation inverser la positon avec Loisir */
+  footer .contenu_droite
+  {
+    padding-left: 0px;
+  }
+  footer .contenu_droite h1, footer .contenu_droite article
+  {
+    margin-left: 50px;
+  }
   footer article
   {
     order: -1;
@@ -287,4 +308,135 @@ footer article div ul li a
   {
     margin-top: 0px;
   }
+  footer aside ul
+  {
+    padding-top: 20px;
+  }
+}
+
+/*----------Media Queries ------------------*/
+/* Gestion d'une version tablette Landscape */
+@media screen and (max-width: 1024px) and (orientation: landscape)
+{
+  body
+  {
+    font-size: 1.3vw;
+    margin: auto;
+  }
+  #phototaille
+  {
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+  }
+  
+}
+
+
+/*----------Media Queries -----------------*/
+/* Gestion d'une version mobile portrait */
+
+@media screen and (max-width: 425px) and (orientation: portrait)
+{
+  body
+  {
+    font-size: 2vw;
+    margin: auto;
+  }
+  /* suppression de la photo */
+  #photo
+  {
+    display: none;
+  }
+  /* Ajustement du titre */
+  #titre
+  {
+    width: 100%;
+    text-align: left;
+    padding: 20px 0px 20px 50px;
+  }
+  /* Changement de direction des blocs pour la version mobile*/
+  #corp, footer, .orgadroite
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Changement de taille des titres du header*/
+  header h1
+  {
+    font-size: 5vw;
+  }
+  header p
+  {
+    font-size: 2.5vw;
+  }
+  /* affection d'une lageur totale au bloc + changement des paddings*/
+  section .contenu_gauche, section .contenu_droite, footer .contenu_gauche, footer .contenu_droite
+  {
+    width: 100%;
+  }
+  section .contenu_droite
+  {
+    padding-left: 0px;
+  }
+  section .contenu_droite h1, section .contenu_droite aside, section .contenu_droite article
+  {
+    margin-left: 50px;
+  }
+  /* Réduction des marges des titres contact, a propos et loisir */
+  .contenu_gauche aside 
+  {
+    margin-bottom: 15px;
+  }
+  .contenu_gauche aside h1
+  {
+    margin-bottom: 15px;
+  }
+  .contenu_gauche h1
+  {
+    margin-bottom: 0px;
+  }
+  /* Mise en forme des éléments de contact sur 2 colonnes en mobile et tablette */
+  .double_mobile
+  {
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .contenu_droite h1
+  {
+    border-bottom-style: solid;
+    border-bottom-color: #BCAAA4;
+    width: 80%;
+  }
+
+  .contenu_droite aside, .contenu_droite article
+  {
+    width: 80%;
+  }
+  footer .contenu_droite
+  {
+    padding-left: 0px;
+  }
+  footer .contenu_droite h1, footer .contenu_droite article
+  {
+    margin-left: 50px;
+  }
+  /* bandeau "recommandation" inverser avec la positon "Loisir" plus mise en page */
+  footer article
+  {
+    order: -1;
+    padding-bottom: 30px;
+  }
+  footer aside
+  {
+    margin-top: 0px;
+  }
+  footer aside ul
+  {
+    padding-top: 20px;
+  }
+}
+
 }
