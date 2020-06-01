@@ -1,9 +1,10 @@
 body
 {
   font-family: verdana,arial,helvetica,sans-serif;
-  width: 1654px;
-  height: 2339px;
+  min-width: 769px;
+  max-width: 1654px;
   margin: auto;
+  font-size: 1em;
 }
 /* Transformation des titres h1 et h2 en majuscule sur tout de document */
 h1, h2
@@ -37,7 +38,7 @@ header aside
 #phototaille
 {
   width: 200px;
-  border-radius: 100%;
+  border-radius: 50%;
   display: inline-block;
   margin: auto;
 }
@@ -219,9 +220,71 @@ footer article div ul li a
   text-decoration: none;
 }
 
-
-
-@media screen and (max-width: 768px)
+@media (min-width: 350px) and (max-width: 768px)
 {
- 
+  body
+  {
+    font-size: 1.7vw;
+    max-width: 768px;
+    margin: 0px;
+    padding: 0px;
+  }
+  /* Changement de la taille de photo */
+  #phototaille
+  {
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+  }
+  /* Changement de direction des blocs pour la version mobile*/
+  #corp, footer
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Changement de taille des titres du header*/
+  header h1
+  {
+    font-size: 4vw;
+  }
+  header p
+  {
+    font-size: 2.5vw;
+  }
+  /* affection d'une lageur totale au bloc */
+  section .contenu_gauche, section .contenu_droite, footer .contenu_gauche, footer .contenu_droite
+  {
+    width: 100%;
+  }
+  /* Réduction des marges des titres contact, a propos et loisir */
+  .contenu_gauche aside 
+  {
+    margin-bottom: 15px;
+  }
+  .contenu_gauche aside h1
+  {
+    margin-bottom: 15px;
+  }
+  .contenu_gauche h1
+  {
+    margin-bottom: 0px;
+  }
+  /* Mise en forme des éléments de contact sur 2 colonnes en mobile et tablette */
+  .double_mobile
+  {
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  /* bandeau recommandation inverser la positon avec Loisir */
+  footer article
+  {
+    order: -1;
+    padding-bottom: 30px;
+  }
+  footer aside
+  {
+    margin-top: 0px;
+  }
 }
