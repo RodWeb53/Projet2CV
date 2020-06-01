@@ -320,7 +320,7 @@ footer article div ul li a
 {
   body
   {
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     margin: auto;
   }
   #phototaille
@@ -345,7 +345,7 @@ footer article div ul li a
 {
   body
   {
-    font-size: 2.1vw;
+    font-size: 2.6vw;
     margin: auto;
   }
   /* suppression de la photo */
@@ -358,7 +358,7 @@ footer article div ul li a
   {
     width: 89%;
     text-align: left;
-    padding: 20px 0px 20px 50px;
+    padding: 20px 0px 20px 30px;
   }
   /* Changement de direction des blocs pour la version mobile*/
   #corp, footer, .orgadroite
@@ -386,7 +386,7 @@ footer article div ul li a
   }
   section .contenu_droite h1, section .contenu_droite aside, section .contenu_droite article
   {
-    margin-left: 50px;
+    margin-left: 20px;
   }
   /* Réduction des marges des titres contact, a propos et loisir */
   .contenu_gauche aside 
@@ -414,10 +414,14 @@ footer article div ul li a
     border-bottom-color: #BCAAA4;
     width: 80%;
   }
+  .contenu_droite i
+  {
+    padding-right: 10px;
+  }
   /* Alignement des puce icones */
   .orgadroite i
   {
-    padding-top: 10px;
+    padding-top: 13px;
   }
   .decTexteBas
   {
@@ -434,17 +438,22 @@ footer article div ul li a
   }
   footer .contenu_droite h1, footer .contenu_droite article
   {
-    margin-left: 50px;
+    margin-left: 20px;
   }
   /* bandeau "recommandation" inverser avec la positon "Loisir" plus mise en page */
   footer article
   {
     order: -1;
     padding-bottom: 0px;
+    padding-left: 20px;
   }
   footer article div
   {
     width: 45%;
+  }
+  footer article div ul
+  {
+    padding-inline-start: 20px;
   }
   footer aside
   {
