@@ -6,7 +6,7 @@ body
   font-size: 0.85em;
 }
 /* Transformation des titres h1 et h2 en majuscule sur tout de document */
-h1, h2
+h1, h2, h3
 {
   text-transform: uppercase;
 }
@@ -52,10 +52,19 @@ header aside
 {
   color: #BCAAA4;
 }
-/*soulignement partiel du sous titre via le span */
-#titre p span
+#titre p
 {
-  text-decoration: solid underline #BCAAA4;
+  margin-bottom: 0px;
+}
+
+/*soulignement partiel du sous titre via le span */
+#titre hr
+{
+  margin: 0px;
+  width: 7%;
+  height: 2px;
+  background-color: #BCAAA4;
+  border: none;
 }
 /* gestion des blocs gauche et droit du corp de la page */
 #corp
@@ -81,7 +90,7 @@ section .contenu_gauche
   margin-bottom: 30px;
 }
 /* Mise en style des titres h1 du bandeau vertical gauche */
-.contenu_gauche h1
+.contenu_gauche h2
 {
   text-align: center;
   background-color: #455A64;
@@ -120,7 +129,7 @@ section .contenu_droite
   padding-left: 50px;
 }
 /* mise en forme des titres h1 du bandeau vertical droit*/
-.contenu_droite h1
+.contenu_droite h2
 {
   border-bottom-style: solid;
   border-bottom-color: #BCAAA4;
@@ -242,6 +251,15 @@ footer article div ul li a
     display: inline-block;
     margin: auto;
   }
+  /*soulignement partiel du sous titre via le span */
+  #titre hr
+  {
+    margin: 0px;
+    width: 12%;
+    height: 2px;
+    background-color: #BCAAA4;
+    border: none;
+  }
   /* Changement de direction des blocs pour la version mobile*/
   #corp, footer
   {
@@ -266,7 +284,7 @@ footer article div ul li a
   {
     padding-left: 0px;
   }
-  section .contenu_droite h1, section .contenu_droite aside
+  section .contenu_droite h2, section .contenu_droite aside
   {
     margin-left: 50px;
   }
@@ -279,7 +297,7 @@ footer article div ul li a
   {
     margin-bottom: 15px;
   }
-  .contenu_gauche h1
+  .contenu_gauche h2
   {
     margin-bottom: 0px;
   }
@@ -330,6 +348,15 @@ footer article div ul li a
     display: inline-block;
     margin: auto;
   }
+  /*soulignement partiel du sous titre via le span */
+  #titre hr
+  {
+    margin: 0px;
+    width: 16%;
+    height: 2px;
+    background-color: #BCAAA4;
+    border: none;
+  }
   .decTexteBas
   {
     padding-bottom: 0px;
@@ -348,17 +375,26 @@ footer article div ul li a
     font-size: 2.6vw;
     margin: auto;
   }
-  /* suppression de la photo */
+  /* bloc photo gestion de la largeur du bloc et de la couleur de fond */
   #photo
   {
-    display: none;
+    width: 30%;
+    background-color: #BCAAA4;
+  }
+  /* formatage de la photo */
+  #phototaille
+  {
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
   }
   /* Ajustement du titre */
   #titre
   {
-    width: 89%;
+    width: 70%;
     text-align: left;
-    padding: 20px 0px 20px 30px;
+    padding: 10px 0px 10px 10px;
   }
   /* Changement de direction des blocs pour la version mobile*/
   #corp, footer, .orgadroite
@@ -384,7 +420,7 @@ footer article div ul li a
   {
     padding-left: 0px;
   }
-  section .contenu_droite h1, section .contenu_droite aside, section .contenu_droite article
+  section .contenu_droite h2, section .contenu_droite aside, section .contenu_droite article
   {
     margin-left: 20px;
   }
@@ -393,11 +429,11 @@ footer article div ul li a
   {
     margin-bottom: 15px;
   }
-  .contenu_gauche aside h1
+  .contenu_gauche aside h2
   {
     margin-bottom: 15px;
   }
-  .contenu_gauche h1
+  .contenu_gauche h2
   {
     margin-bottom: 0px;
   }
@@ -408,7 +444,7 @@ footer article div ul li a
     display: inline-flex;
     flex-direction: column;
   }
-  .contenu_droite h1
+  .contenu_droite h2
   {
     border-bottom-style: solid;
     border-bottom-color: #BCAAA4;
@@ -436,7 +472,7 @@ footer article div ul li a
   {
     padding-left: 0px;
   }
-  footer .contenu_droite h1, footer .contenu_droite article
+  footer .contenu_droite h2, footer .contenu_droite article
   {
     margin-left: 20px;
   }
@@ -453,7 +489,7 @@ footer article div ul li a
   }
   footer article div ul
   {
-    padding-inline-start: 20px;
+    padding-left: 20px;
   }
   footer aside
   {
@@ -463,6 +499,4 @@ footer article div ul li a
   {
     padding-top: 20px;
   }
-}
-
 }

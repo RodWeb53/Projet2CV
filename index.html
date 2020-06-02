@@ -2,6 +2,8 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="format-detection" content="telephone=no"/>
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/03826393cd.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -17,7 +19,8 @@
           </aside>
           <section id="titre">
             <h1><span>Rodolphe</span> Clemenceau</h1><!--ajout d'un span pour changer la couleur en css -->
-            <p><span>Dével</span>oppeur Web en formation</p><!--ajout d'un span pour ajouter un soulignement en css -->
+            <p>Développeur Web en formation</p>
+            <hr><!--ajout d'un hr pour ajouter un soulignement en css -->
           </section>
         </header>
 
@@ -26,7 +29,7 @@
           <div class="contenu_gauche"> <!--bloc gauche "contact et à propos de moi"-->
             <!--bloc gauche contact -->
             <aside> 
-              <h1>Contact</h1>
+              <h2>Contact</h2>
                 <div class="double_mobile">
                   <p>
                     Adresse<br />
@@ -37,8 +40,7 @@
                   
                   <p>
                     Téléphone<br />
-                    <!--ajout d'une image de 1px vide pour enlever le soulignement sous Edge -->
-                    06 30<img src="image/vide.png" alt="" width="1" height="1"/> 124 175
+                    06 30 124 175
                   </p>
 
                 </div>
@@ -61,7 +63,7 @@
             </aside>
             <!--bloc gauche à propos de moi -->
             <aside> 
-              <h1>à propos de moi</h1>
+              <h2>à propos de moi</h2>
               
               <p id="justif">
                 Après 31 ans dans le monde de l'industrie et être passé par plusieurs fonctions et secteurs comme :<br /><br />
@@ -78,14 +80,14 @@
           <div class="contenu_droite"><!--bloc droit "Formation et expériences pro"-->
 
             <div class="decTexteBas"><!--bloc droit "Formation"-->
-              <h1><i class="fas fa-graduation-cap"></i>Formation</h1><!-- dans les balise i insertion d'un icone fontawesome -->
+              <h2><i class="fas fa-graduation-cap"></i>Formation</h2><!-- dans les balise i insertion d'un icone fontawesome -->
               <div class="orgadroite">
                 <aside><i class="far fa-dot-circle"></i>
                   <p>2020<br />Internet</p>
 
                 </aside>
                 <article>
-                  <h2>Openclassrooms</h2>
+                  <h3>Openclassrooms</h3>
                   <p>Web développeur</p>
                   <p>Formation de web développeur commencé en Mai 2020, sur une période de 6 mois.</p>
                 </article>
@@ -96,7 +98,7 @@
 
                 </aside>
                 <article>
-                  <h2>La baronnerie</h2>
+                  <h3>La baronnerie</h3>
                   <p>CAP mécanicien Ajusteur</p>
                   <p>Diplome de mécanicien ajousteur sur une période de 3 années.</p>
                 </article>
@@ -105,14 +107,14 @@
 
  
             <div class="decTexteBas"> <!--bloc droit "expériences pro"-->
-              <h1><i class="fas fa-briefcase"></i>Expérience professionelle</h1>
+              <h2><i class="fas fa-briefcase"></i>Expérience professionelle</h2>
               <div class="orgadroite">
                 <aside><i class="far fa-dot-circle"></i>
                   <p>2019 - ce jour<br />St Lambert la potherie</p>
 
                 </aside>
                 <article>
-                  <h2>SLTS</h2>
+                  <h3>SLTS</h3>
                   <p>Ordonnanceur</p>
                   <p>Planification de l'intégralité de la production du site</p>
                 </article>
@@ -124,7 +126,7 @@
 
                 </aside>
                 <article>
-                  <h2>SLTS</h2>
+                  <h3>SLTS</h3>
                   <p>Chef de projet ERP</p>
                   <p>Changement d'ERP. Les tâches sur les 6 années à ce poste ont été:<br />
                   Création du cahier des charges, prospection des offres du marché, choix du prestataire, paramétrage, mise en place, accompagnement et développement.</p>
@@ -137,7 +139,7 @@
 
                 </aside>
                 <article>
-                  <h2>SLTS</h2>
+                  <h3>SLTS</h3>
                   <p>Responsable logistique</p>
                   <p>Gestion d'une équipe de 8 personnes, et d'une flotte de 3 camions.<br />
                     Gestion des emballages, préparation des tournées .....
@@ -151,7 +153,7 @@
 
                 </aside>
                 <article>
-                  <h2>SLTS</h2>
+                  <h3>SLTS</h3>
                   <p>Technicien de production</p>
                   <p>Opérateur régleur sur machine à commande numérique<br />
                     Programmation via la CAO et CFAO.
@@ -168,7 +170,7 @@
 
         <footer> <!--bloc footer gauche "Loisir" et droite "Recommandations"-->
           <aside class="contenu_gauche"> <!--bloc gauche "Loisir" -->
-            <h1>Loisirs</h1>
+            <h2>Loisirs</h2>
             <ul id="piedgauche">
               <li><i class="fas fa-table-tennis"></i></li>
               <li><i class="fas fa-biking"></i></li>
@@ -176,13 +178,12 @@
             </ul>
           </aside>
           <article class="contenu_droite"> <!--bloc droit "Recommandations"-->
-            <h1><i class="fas fa-pencil-alt"></i>Recommandations</h1>
+            <h2><i class="fas fa-pencil-alt"></i>Recommandations</h2>
             <div>
               <ul>
                 <li>BRUNO VERGNE</li>
                 <li>Directeur, SLTS</li>
-                <!--ajout d'une image de 1px vide pour enlever le soulignement sous Edge -->
-                <li>Télephone : 06 73<img src="image/vide.png" alt="" width="1" height="1"/> 98 92 38</li>
+                <li>Télephone : 06 73 98 92 38</li>
                 <li>Email: <a href="b.vergne@slts-sa.com">b.vergne@slts-sa.com</a></li>
               </ul>
             </div>
@@ -190,8 +191,7 @@
               <ul>
                 <li>VALENTIN NIVAU</li>
                 <li>Directeur production, SLTS</li>
-                <!--ajout d'une image de 1px vide pour enlever le soulignement sous Edge -->
-                <li>Télephone : 06 40<img src="image/vide.png" alt="" width="1" height="1"/> 47 90 57</li>
+                <li>Télephone : 06 40 47 90 57</li>
                 <li>Email: <a href="v.nivau@slts-sa.com">v.nivau@slts-sa.com</a></li>
               </ul>
             </div>
