@@ -60,6 +60,7 @@ header aside
 /*soulignement partiel du sous titre via le span */
 #titre hr
 {
+  text-align: left;
   margin: 0px;
   width: 7%;
   height: 2px;
@@ -254,11 +255,7 @@ footer article div ul li a
   /*soulignement partiel du sous titre via le span */
   #titre hr
   {
-    margin: 0px;
     width: 12%;
-    height: 2px;
-    background-color: #BCAAA4;
-    border: none;
   }
   /* Changement de direction des blocs pour la version mobile*/
   #corp, footer
@@ -351,11 +348,7 @@ footer article div ul li a
   /*soulignement partiel du sous titre via le span */
   #titre hr
   {
-    margin: 0px;
     width: 16%;
-    height: 2px;
-    background-color: #BCAAA4;
-    border: none;
   }
   .decTexteBas
   {
